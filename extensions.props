@@ -1,0 +1,5 @@
+# This file should contain any extensions that the video files use (mp4, avi, etc.)
+# The period before the extension should not be included.
+# There should be one extension per line, and there should not be any leading or
+# trailing whitespace. This property file should not begin or end with a blank line.
+# Any line that starts with the `#` character will be ignored by the program.

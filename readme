@@ -1,0 +1,25 @@
+Program usage:
+
+Included with the program are 3 .props files,
+
+-labels.props
+
+This file should contain the labels, that you would like applied to the videos,
+one per line. The labels should be in the order you would like them applied,
+e.i. the label on the first line will be applied to the video with the oldest timestamp,
+second line to video with the second oldest timestamp, and so on.
+
+-paths.props
+
+This file should contain the fully qualified path of the folder(s) containing the
+video files. One per line.
+
+-extensions.props
+
+This file should contain the extension(s) of the videos files (e.g. mp4, avi, etc.).
+The period before the extension should not be included (mp4 instead of .mp4). One per line.
+
+I tried to make the program highly portable, but depending on how you compile it you may need
+to add dirent.h to a folder where your compiler can find it. I've included this file
+in the `include` folder. If you run into this problem and you're unsure where to place the file,
+you'll have to search the internet for the answer.

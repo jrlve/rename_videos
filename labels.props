@@ -1,0 +1,6 @@
+# This file should contain the action labels in the order that you want them.
+# There should be one action per line, and there should not be any leading or
+# trailing whitespace. This property file should not begin or end with a blank line.
+# e.g, if you want `ACTION_ONE` assigned to the video with the first timestamp,
+# it should appear on the first line of the file.
+# Any line that starts with the `#` character will be ignored by the program.

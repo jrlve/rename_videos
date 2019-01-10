@@ -1,0 +1,11 @@
+# This file should contain the fully qualified (absolute) path of the folders/directories that contain
+# the video files.
+# There should be one folder/directory per line, and there should not be any leading or
+# Trailing whitespace. This property file should not begin or end with a blank line
+# Files should be separated with forward slashes (C:/path/to/file) as opposed to back slashes (C:\path\to\file)
+# e.g. if you have 2 cameras that each save videos to a `videos` folder, this file might look something like this:
+#----------------------------------
+# C:/User/Documents/CAMERA_1/videos
+# C:/User/Documents/CAMERA_2/videos
+#----------------------------------
+# Any line that starts with the `#` character will be ignored by the program.
