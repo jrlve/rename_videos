@@ -104,7 +104,7 @@ void renameVideos(list *paths, list *trials, list *extensions) {
     }
     free(filtered_files);
     char *timestamp = malloc(sizeof(char) * 15);
-    snprintf(timestamp, 15, "%ld", time(NULL));
+    snprintf(timestamp, 15, "%ld", (long) time(NULL));
     char *prefix = allocateString(RENAMED_FOLDER_PREFIX);
 
     // create folder for renamed files
@@ -282,7 +282,6 @@ void makeHeap(minHeap *h) {
 }
 
 void addToHeap(minHeap *h, tuple *tup) {
-  printf("enter addToHeap, adding key %li\n", tup->key);
   int key = tup->key;
   int size = h->size;
   tuple *elements = h->elements;
@@ -348,7 +347,6 @@ char *extractExtension(char* fileName) {
     }
   }
   int size = strlen(fileName) - begin;
-  printf("size: %i\n", size);
   if(size <= 0) {
     return NULL;
   }
@@ -399,29 +397,18 @@ int asciiToInt(char c) {
 int isNumberCharacter(char c) {
   switch(c) {
     case '0':
-      // continue
     case '1':
-      // continue
     case '2':
-      // continue
     case '3':
-      // continue
     case '4':
-      // continue
     case '5':
-      // continue
     case '6':
-      // continue
     case '7':
-      // continue
     case '8':
-      // continue
     case '9':
       return 1;
-      break;
     default:
       return 0;
-      break;
     }
 }
 
